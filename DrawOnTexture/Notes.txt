@@ -1,0 +1,13 @@
+
+* Create new project, using template for Windows Desktop Application (C++), named it DrawOnTexture.
+* Go to project properties, change C++ language level to /std:c++latest
+* Manage NuGet and add:
+   1. WinRT/C++
+   2. Agility DirectX
+   3. WinPixEventRuntime
+* Download and add DirectXTK12 to the solution
+   - and edit additional include dirs to point to the Inc directory
+     Eg: $(SolutionDir)\..\Repo\DirectXTK12\Inc
+     C:\Users\rober\Workspace\MonoRepo\DirectXTK12\Inc
+* So Pix can attach, add this to main function
+    PIXLoadLatestWinPixGpuCapturerLibrary();
